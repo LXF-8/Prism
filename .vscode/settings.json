@@ -1,0 +1,29 @@
+{
+  // 1. 设置默认格式化程序为 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 2. 启用保存时自动格式化
+  "editor.formatOnSave": true,
+
+  // 3. 启用保存时自动运行 ESLint 修复（推荐，用于修复大部分格式和规范问题）
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit" // 只在保存时自动修复 ESLint 能解决的问题
+  },
+
+  // 4. 定义哪些文件类型应该使用这些设置 (可选，通常 Nx 默认配置已覆盖)
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
