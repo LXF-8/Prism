@@ -7,16 +7,10 @@
       "path": "./apps/prism"
     },
     {
-      "path": "./libs/shared"
-    },
-    {
       "path": "./apps/auction"
     },
     {
-      "path": "./ui"
-    },
-    {
-      "path": ".//libs/ui"
+      "path": "./libs/ui"
     }
   ]
 }
