@@ -1,4 +1,5 @@
 import nx from '@nx/eslint-plugin';
+import unusedImportsPlugin from 'eslint-plugin-unused-imports';
 
 export default [
   ...nx.configs['flat/base'],
@@ -15,6 +16,9 @@ export default [
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
+    plugins: {
+      'unused-imports': unusedImportsPlugin,
+    },
     rules: {
       '@nx/enforce-module-boundaries': [
         'error',
@@ -29,6 +33,7 @@ export default [
           ],
         },
       ],
+      'unused-imports/no-unused-imports': 'error',
     },
   },
   {

@@ -10,10 +10,13 @@
       "path": "./libs/shared"
     },
     {
-      "path": "./auction"
+      "path": "./apps/auction"
     },
     {
-      "path": "./apps/auction"
+      "path": "./ui"
+    },
+    {
+      "path": ".//libs/ui"
     }
   ]
 }

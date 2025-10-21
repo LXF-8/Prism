@@ -6,7 +6,8 @@
 
 # Add new library
 
-nx generate @nx/react:library ui-shared --directory=libs/shared --setParserOptions
+nx g @nx/react:lib /libs/ui
+nx g @nx/react:component /libs/ui/src/lib/button
 
 # Add new projects
 
